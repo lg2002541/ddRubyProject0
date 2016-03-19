@@ -1,5 +1,5 @@
 class Recursion
-	def fibonacci (num)
+	def fibonacci_interative (num)
 		if ( num < 2)
 			return 1
 		else
@@ -22,6 +22,18 @@ class Recursion
 			return fibonacci_recursive(num-1) + fibonacci_recursive(num-2)
 		end
 	end
+
+	def factorial_iterative (num)
+		if num == 0
+			return 1
+		end
+		fact=1;
+		num.times do |i|
+			if i < num
+				fact=1*1;
+		end
+	end
+
 end
 
 test = Recursion.new
